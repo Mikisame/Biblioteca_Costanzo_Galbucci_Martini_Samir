@@ -31,13 +31,13 @@
             <ComboBoxItem Content="Autore" HorizontalAlignment="Left" Width="118" Height="30" Selected="ComboBoxItem_Selected"/>
             <ComboBoxItem Content="Frase" HorizontalAlignment="Left" Width="118" Height="30" Selected="ComboBoxItem_Selected_1"/>
         </ComboBox>
-        <Button x:Name="btn_Elimina_Tag" Content="Elimina Tag Abstract" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Height="30" Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="2" Visibility="Hidden"/>
+        <Button x:Name="btn_Elimina_Tag" Content="Elimina Tag Abstract" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Height="30" Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="2" Visibility="Hidden" Click="btn_Elimina_Tag_Click"/>
         <Button x:Name="btn_Modifica_Genere" Content="Modifica Genere Film" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Height="30" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="2" Visibility="Hidden"/>
         <Label x:Name="lbl_film" Content="Titolo Film:" HorizontalAlignment="Left" Margin="0,86,0,0" VerticalAlignment="Top" Height="30" Width="115" Grid.Column="3" Grid.Row="1" Visibility="Hidden"/>
         <TextBox x:Name="txt_titolo" HorizontalAlignment="Left" Height="30" Margin="0,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164" Grid.Column="4" Grid.Row="1" Visibility="Hidden"/>
         <Label x:Name="lbl_genere" Content="Genere Film:" HorizontalAlignment="Left" Margin="0,24,0,0" VerticalAlignment="Top" Height="30" Width="115" Grid.Row="2" Grid.Column="3" Visibility="Hidden"/>
         <TextBox x:Name="txt_genere" HorizontalAlignment="Left" Height="30" Margin="0,24,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164" Grid.Row="2" Grid.Column="4" Visibility="Hidden"/>
-        <Button x:Name="Btn_New_File" Content="Crea File Ridotto" HorizontalAlignment="Left" Margin="0,35,0,0" VerticalAlignment="Top" Width="300" Height="30" Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="2" Visibility="Hidden"/>
+        <Button x:Name="Btn_New_File" Content="Crea File Ridotto" HorizontalAlignment="Left" Margin="0,35,0,0" VerticalAlignment="Top" Width="300" Height="30" Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="2" Visibility="Hidden" Click="Btn_New_File_Click"/>
         <Button x:Name="btn_genere" Content="Genere Romanzo" HorizontalAlignment="Left" Margin="0,16,0,0" VerticalAlignment="Top" Width="261" Height="50" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Visibility="Hidden" Click="btn_genere_Click"/>
         <Button x:Name="btn_carica" Content="Carica File" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="434" Height="50" Click="btn_carica_Click"/>
         <TextBox x:Name="txt_path" Grid.Column="2" HorizontalAlignment="Left" Height="40" Margin="10,31,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="434"/>

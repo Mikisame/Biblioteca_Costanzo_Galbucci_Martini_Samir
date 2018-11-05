@@ -53,11 +53,12 @@ namespace Interface
         }
 
         XDocument documento;
+        string path;
         private void btn_carica_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                string path = txt_path.Text;
+                path = txt_path.Text;
                 documento = XDocument.Parse(File.ReadAllText(path, System.Text.Encoding.UTF8), LoadOptions.None);
                 for (int i = 0; i < fase1.Count; i++)
                     fase1[i].Visibility = Visibility.Hidden;
@@ -141,5 +142,17 @@ namespace Interface
             lbx_titoli.Items.Add(x);
         }
 
+        private void btn_Elimina_Tag_Click(object sender, RoutedEventArgs e)
+        {
+            XDocument nuovoFile = documento;
+            nuovoFile.Root.Elements("wiride").Elements("abstract").Remove();
+            nuovoFile.Save(@"..\..\fileSenzaAbstract.xml");
+        }
+
+        private void Btn_New_File_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
+
